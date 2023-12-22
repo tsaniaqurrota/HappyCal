@@ -26,7 +26,7 @@ class FoodDetailAdmActivity : AppCompatActivity() {
                 detailFoodName.setText(food.food_name)
                 detailFoodCal.setText(food.food_cal.toString())
                 Glide.with(this@FoodDetailAdmActivity)
-                    .load(food.food_pict) // Assuming food.food_pict is the URL or resource ID of the image
+                    .load(food.food_pict)
                     .into(detailImgFood)
             }
         }
@@ -39,7 +39,7 @@ class FoodDetailAdmActivity : AppCompatActivity() {
         with(binding) {
             food = intent.getSerializableExtra("food") as Food
             detailFoodName.setText(food.food_name)
-            detailFoodCal.setText(food.food_cal.toString())
+            detailFoodCal.setText("${food.food_cal.toString()} cal")
             Glide.with(this@FoodDetailAdmActivity)
                 .load(food.food_pict)
                 .into(detailImgFood)

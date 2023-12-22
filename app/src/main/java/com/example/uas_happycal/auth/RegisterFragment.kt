@@ -41,6 +41,11 @@ class RegisterFragment : Fragment() {
             val weight = weightStr.toDoubleOrNull()
             val targetCal = targetCalStr.toIntOrNull()
 
+            if (password != cpassword) {
+                Toast.makeText(context, "Konfirmasi password tidak cocok", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             val newUser = User(
                 user_email = email,
                 user_name = username,
@@ -58,9 +63,9 @@ class RegisterFragment : Fragment() {
                     username.isNotEmpty() && height != null && weight != null && targetCal != null
                 ) {
                     Firebase.addUser(newUser)
-                    Toast.makeText(context, "Registrasi berhasil!", Toast.LENGTH_SHORT).show()
-                    val intentToMainActivity = Intent(context, MainActivity::class.java)
-                    startActivity(intentToMainActivity)
+                    Toast.makeText(context, "Registrasi berhasil! Silakan Login!", Toast.LENGTH_SHORT).show()
+                    val intentToAuthActivity = Intent(context, AuthActivity::class.java)
+                    startActivity(intentToAuthActivity)
                 } else {
                     Toast.makeText(context, "Lengkapi semua kolom!", Toast.LENGTH_SHORT).show()
                 }

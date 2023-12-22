@@ -69,8 +69,8 @@ class DetailHistoryActivity : AppCompatActivity() {
             if (editedAteFood != null) {
                 with(binding) {
                     detailHcFoodName.setText(editedAteFood.food_name)
-                    detailHcFoodCal.setText(editedAteFood.food_cal.toString())
-                    detailHcFoodTakaran.setText(editedAteFood.food_gr.toString())
+                    detailHcFoodCal.setText("${editedAteFood.food_cal.toString().toInt()} cal")
+                    detailHcFoodTakaran.setText("${editedAteFood.food_gr.toString().toInt()} gr")
                     detailHcFoodEatTime.setText(editedAteFood.food_eat_time)
                     detailHcFoodJenis.setText(editedAteFood.food_type)
                     Glide.with(this@DetailHistoryActivity)
