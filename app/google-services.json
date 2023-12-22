@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "107546654020",
+    "project_id": "uas-happycal",
+    "storage_bucket": "uas-happycal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107546654020:android:df81d27d0a46c592e2d311",
+        "android_client_info": {
+          "package_name": "com.example.uas_happycal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcXuNjB8rSMGSFa11rihjWt049Bz5Hlo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

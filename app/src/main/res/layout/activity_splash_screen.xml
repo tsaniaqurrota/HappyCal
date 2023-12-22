@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/img_logo_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/happycal_logo"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HappyCal"
+        android:textAlignment="center"
+        android:textSize="18pt"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monitor calories make you happy"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        />
+
+
+</LinearLayout>

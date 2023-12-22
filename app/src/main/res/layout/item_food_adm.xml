@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:backgroundTint="#1AFF6C22"
+    android:background="@drawable/bg_layout"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="10dp">
+
+    <!-- Gambar di sebelah kiri -->
+    <ImageView
+        android:id="@+id/img_adm_food"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_food" />
+
+    <!-- Nama makanan dan kalori di sebelah kanan -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_adm_food_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nasi Putih"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_calories"
+                app:tint="@color/orange" />
+
+            <TextView
+                android:id="@+id/txt_adm_food_cal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="200 cal/100gr"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

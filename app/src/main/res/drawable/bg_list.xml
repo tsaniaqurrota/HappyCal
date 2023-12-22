@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <layer-list>
+            <item>
+                <shape
+                    android:shape="rectangle"
+                    android:width="298dp"
+                    android:height="600dp">
+
+                    <padding
+                        android:bottom="10dp"
+                        android:top="10dp"
+                        android:left="3dp"/>
+                    <solid android:color="@color/white"/>
+                    <stroke android:color="#F6D4C2"
+                        android:width="2dp"/>
+                    <corners android:radius="10dp" />
+                </shape>
+            </item>
+            <item android:right="8dp">
+                <bitmap
+                    android:gravity="center|right"
+                    android:src="@drawable/icon_dropdown"/>
+
+            </item>
+        </layer-list>
+    </item>
+
+
+</selector>
